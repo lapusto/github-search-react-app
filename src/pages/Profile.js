@@ -34,7 +34,7 @@ export const Profile = ({ match }) => {
   return (
     <Fragment>
       <Link to="/" className="btn btn-link">
-        На главную
+        Home
       </Link>
 
       <div className="card mb-4">
@@ -55,22 +55,22 @@ export const Profile = ({ match }) => {
               <a href={html_url} 
               target="_blank" 
               rel='noreferrer'
-              className="btn btn-dark mb-2">Открыть профиль</a>
+              className="btn btn-dark mb-2">Open profile</a>
               <ul>
                 {login && <li>
                   <strong>Username: </strong> {login}
                   </li>}
                   {company && <li>
-                  <strong>Компания: </strong> {company}
+                  <strong>Company: </strong> {company}
                   </li>}
                   {blog && <li>
                   <strong>Website: </strong> {blog}
                   </li>}
               </ul>
-                    <span className='badge bg-primary'>Подписчики: {followers}</span>
-                    <span className='badge bg-warning text-dark'>Подписки: {following}</span>
-                    <span className='badge bg-info'>Репозитории: {public_repos}</span>
-                    <span className='badge bg-success'>Gists: {public_gists}</span>
+                    <span className='badge bg-primary m-1'>Followers: {followers}</span>
+                    <span className='badge bg-warning text-dark m-1'>Following: {following}</span>
+                    <span className='badge bg-info m-1'>Repositories: {public_repos}</span>
+                    <span className='badge bg-success m-1'>Gists: {public_gists}</span>
 
             </div>
           </div>
